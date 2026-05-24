@@ -1,0 +1,11 @@
+# Archivos grandes y generados - NO subir
+*.db
+*.faiss
+medical.json
+output_json/
+data/04_db/
+data/05_wiki/*/documentos/*.json
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store

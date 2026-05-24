@@ -1,0 +1,29 @@
+{
+    "Nombre": "Paciente_Ficticio",
+    "DNI": "1111111",
+    "Datos Generales": {
+        "Edad": "58",
+        "Sexo": "Masculino",
+        "Contacto": ""
+    },
+    "Enfermedad Actual": {
+        "Motivo": "Presenta dolor lumbar agudo e intenso de inicio súbito, que irradia hacia la ingle derecha. Refiere náuseas sin vómitos. En tira reactiva de orina se detecta hematuria microscópica. Signos vitales estables, sin fiebre.",
+        "Síntomas": "",
+        "Tratamientos Previos": "Antecedentes de hipertensión y diabetes tipo 2."
+    },
+    "Antecedentes": {
+        "Hipertensión": true,
+        "Diabetes": true,
+        "Asma": false,
+        "Cardiopatías": false,
+        "Alergias": "",
+        "Medicación": "",
+        "Familiares": ""
+    },
+    "Estilo de Vida": {
+        "Tabaco": "",
+        "Alcohol": "",
+        "Dieta": "",
+        "Salud Mental": ""
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "Nombre": "paciente de prueba",
+    "DNI": "11111111",
+    "Datos Generales": {
+        "Edad": "32",
+        "Sexo": "Masculino",
+        "Contacto": ""
+    },
+    "Enfermedad Actual": {
+        "Motivo": "",
+        "Síntomas": "",
+        "Tratamientos Previos": ""
+    },
+    "Antecedentes": {
+        "Hipertensión": false,
+        "Diabetes": false,
+        "Asma": false,
+        "Cardiopatías": false,
+        "Alergias": "",
+        "Medicación": "",
+        "Familiares": ""
+    },
+    "Estilo de Vida": {
+        "Tabaco": "",
+        "Alcohol": "",
+        "Dieta": "",
+        "Salud Mental": ""
+    }
+}

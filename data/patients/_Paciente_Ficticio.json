@@ -1,0 +1,29 @@
+{
+    "Nombre": "Paciente_Ficticio",
+    "DNI": "",
+    "Datos Generales": {
+        "Edad": "",
+        "Sexo": "",
+        "Contacto": ""
+    },
+    "Enfermedad Actual": {
+        "Motivo": "",
+        "Síntomas": "",
+        "Tratamientos Previos": ""
+    },
+    "Antecedentes": {
+        "Hipertensión": false,
+        "Diabetes": false,
+        "Asma": false,
+        "Cardiopatías": false,
+        "Alergias": "",
+        "Medicación": "",
+        "Familiares": ""
+    },
+    "Estilo de Vida": {
+        "Tabaco": "",
+        "Alcohol": "",
+        "Dieta": "",
+        "Salud Mental": ""
+    }
+}
