@@ -38,19 +38,19 @@ Esta arquitectura obliga al sistema a refutar su propio borrador antes de emitir
 ---
 
 
-##  Arquitectura y Flujo de Información (Actor-Critic RAG)
+## Arquitectura y Flujo de Información (Actor-Critic RAG)
 
 El sistema está dividido en dos grandes *pipelines*: uno de **Ingesta Offline** (Acelerado por GPU Batching) y otro de **Inferencia Online Reflexiva**.
 
 ### 1. Ingesta y Batch Vectorization (ETL Pipeline)
-## Flujo del Sistema
 
 ![Flujo del Sistema](flujo_sistema.png)
+
 *Diagrama del flujo general del proyecto HealthQARager*
 
-2. Flujo de Razonamiento Multi-Agente (Inference Pipeline)
-code Text
+### 2. Flujo de Razonamiento Multi-Agente (Inference Pipeline)
 
+```text
 [ PACIENTE ] ➜ (Consulta) + (Historia Clínica / EHR)
       │
       ▼
@@ -67,10 +67,10 @@ code Text
       │
       ├──▶ [ AGENTE AUDITOR 1: DIAGNÓSTICO ] ➜ Aplica lógica de diagnóstico diferencial. Busca sesgos de anclaje, omisiones de "Red Flags" y evalúa si los síntomas justifican otras patologías más severas no contempladas.
       │
-      ├──▶ [ AGENTE AUDITOR 2: SEGURIDAD (FARMACO/IATROGENIA) ] ➜ Aplica validación lógica estricta: cruza el Borrador con el EHR buscando interacciones medicamentosas, alergias, y evalúa la idoneidad de los estudios sugeridos (riesgos de toxicidad, invasividad, o contraindicaciones según patologías crónicas previas).
+      ├──▶ [ AGENTE AUDITOR 2: SEGURIDAD (FARMACO/IATROGENIA) ] ➜ Aplica validación lógica estricta: cruza el Borrador con el EHR buscando interacciones medicamentosas, alergias, y evalúa la idoneidad de los estudios sugeridos.
       │
       ▼
-[ META-ORQUESTADOR FINAL ] ➜ Recibe el Borrador + Auditoría 1 + Auditoría 2. Corrige alucinaciones, blinda el texto y emite la SÍNTESIS FINAL NO VINCULANTE.
+[ META-ORQUESTADOR FINAL ] ➜ Recibe el Borrador + Auditoría 1 + Auditoría 2. Corrige alucinaciones y emite la SÍNTESIS FINAL NO VINCULANTE.
 
 🔬 Ingeniería de Prompts: Maximizando LLMs Locales
 
