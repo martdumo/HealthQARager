@@ -45,16 +45,8 @@ El sistema está dividido en dos grandes *pipelines*: uno de **Ingesta Offline**
 ### 1. Ingesta y Batch Vectorization (ETL Pipeline)
 ## Flujo del Sistema
 
-```mermaid
-graph TD
-    A[JSON Raw Data] -->|4 Fuentes| B(Unifier ETL)
-    B --> C{HealthQA}
-    B --> D{Diseases}
-    B --> E{Symptoms}
-    B --> F{Dictionary}
-    C & D & E & F --> G[Batch Encoder GPU - BAAI/bge-m3]
-    G --> H[(FAISS Vector Index)]
-    G --> I[(SQLite Metadata)]
+![Flujo del Sistema](flujo_sistema.png)
+*Diagrama del flujo general del proyecto HealthQARager*
 
 2. Flujo de Razonamiento Multi-Agente (Inference Pipeline)
 code Text
