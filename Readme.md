@@ -43,6 +43,8 @@ Esta arquitectura obliga al sistema a refutar su propio borrador antes de emitir
 El sistema está dividido en dos grandes *pipelines*: uno de **Ingesta Offline** (Acelerado por GPU Batching) y otro de **Inferencia Online Reflexiva**.
 
 ### 1. Ingesta y Batch Vectorization (ETL Pipeline)
+## Flujo del Sistema
+
 ```mermaid
 graph TD
     A[JSON Raw Data] -->|4 Fuentes| B(Unifier ETL)
